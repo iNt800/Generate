@@ -22,11 +22,9 @@ generate = {
     'three': three,
     'four': four,
     'five': five,
-}  
+}
 
-class Purpose:
-    
-    def __distribution():
+def final_result():
         if str(generate['one']) == '1':
             photo[200:300, 250:400] = 54, 16, 53
             s1 = "A"
@@ -110,20 +108,14 @@ class Purpose:
         space = 'Sid: '
         
         s = space + s1 + s2 + s3 + s4 + s5
-        
-        return s
     
-    final_sid = __distribution()
+        result = ''
 
-def final_result():
+        result += str(generate['one']) + ' ' + str(generate['two']) + ' ' + str(generate['three']) + ' ' +  str(generate['four']) + ' ' +  str(generate['five'])
+
+        sid = s
     
-    result = ''
-
-    result += str(generate['one']) + ' ' + str(generate['two']) + ' ' + str(generate['three']) + ' ' +  str(generate['four']) + ' ' +  str(generate['five'])
-
-    sid = Purpose.final_sid
-    
-    print(result, sid)
+        print(result, sid)
 
 def check_sel():
     if sel == 'г':
