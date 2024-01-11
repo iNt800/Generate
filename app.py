@@ -1,6 +1,7 @@
 import random
 import cv2
 import numpy as np
+from PIL import Image, ImageDraw
 
 photo = np.zeros((600, 600, 3), dtype='uint8')
 
@@ -208,12 +209,11 @@ def check_sel():
     else:
         print('Вы ввели не то!')
 
-
 if __name__ == '__main__':
     
-    sel = input('Генерировать или Ввести сид? (г или с): ')
+    sel = input('Генерировать или ввести сид? г или с: ')
     
     check_sel()
     
-    cv2.imshow('Photo', photo)
-    cv2.waitKey(5000)
+    cv2.imshow('photo', photo)
+    cv2.waitKey(0)
